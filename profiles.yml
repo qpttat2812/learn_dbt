@@ -1,0 +1,15 @@
+dae-dbt-learn:
+  target: dev
+  outputs:
+    dev:
+      project: dae-dbt-learn
+      keyfile: D:\projects\learn_dbt\config\dbt-sa.json
+      dataset: dbt_learn_040623
+      location: US
+      type: bigquery
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      method: service-account
+      priority: interactive
+      threads: 4
+    
